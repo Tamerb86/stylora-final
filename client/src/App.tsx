@@ -12,7 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import Customers from "./pages/Customers";
 import Services from "./pages/Services";
 import Appointments from "./pages/Appointments";
-import Employees from "@/pages/Employees";
+
 import Products from "@/pages/Products";
 import Reports from "@/pages/Reports";
 import Financial from "@/pages/Financial";
@@ -51,16 +51,16 @@ import SaasAdminTenants from "./pages/SaasAdmin/SaasAdminTenants";
 import SaasAdminTenantDetails from "./pages/SaasAdmin/SaasAdminTenantDetails";
 import SaasAdminTenantOnboarding from "./pages/SaasAdminTenantOnboarding";
 import ProtectedSaasAdminRoute from "./components/ProtectedSaasAdminRoute";
-import SignUp from "./pages/SignUp";
+
 import Contact from "./pages/Contact";
 import { VerifyEmail } from "./pages/VerifyEmail";
 import EmailVerificationRequired from "./pages/EmailVerificationRequired";
 import SetupWizard from "./pages/SetupWizard";
 import POSPayment from "./pages/POSPayment";
 import PaymentHistory from "./pages/PaymentHistory";
-import PaymentProviders from "./pages/PaymentProviders";
+
 import ReaderManagement from "./pages/ReaderManagement";
-import WalkInQueue from "./pages/WalkInQueue";
+
 import QueueDisplay from "./pages/QueueDisplay";
 import RefundManagement from "./pages/RefundManagement";
 import POSFinancialReports from "./pages/POSFinancialReports";
@@ -77,7 +77,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/signup" component={SignUp} />
+
       <Route path="/verify-email" component={VerifyEmail} />
       <Route path="/email-verification-required" component={EmailVerificationRequired} />
       <Route path="/setup-wizard" component={SetupWizard} />
@@ -111,7 +111,7 @@ function Router() {
       <Route path="/billing-admin" component={BillingAdminDashboard} />
       <Route path="/pos-payment" component={POSPayment} />
       <Route path="/payment-history" component={PaymentHistory} />
-      <Route path="/payment-providers" component={PaymentProviders} />
+
       <Route path="/reader-management" component={ReaderManagement} />
       <Route path="/print-receipt/:orderId" component={PrintReceipt} />
       <Route path="/saas-admin/login" component={SaasAdminLogin} />
@@ -139,9 +139,9 @@ function Router() {
       <Route path="/customers" component={Customers} />
       <Route path="/services" component={Services} />
       <Route path="/appointments" component={Appointments} />
-      <Route path="/walk-in-queue" component={WalkInQueue} />
+
       <Route path="/queue-display" component={QueueDisplay} />
-      <Route path="/employees" component={Employees} />
+
       <Route path="/products" component={Products} />
       <Route path="/reports" component={Reports} />
       <Route path="/comprehensive-reports" component={ComprehensiveReports} />
